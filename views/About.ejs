@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://stackoverflow.com/tour -->
+<html class="html__responsive html__unpinned-leftnav" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>About - Stack Overflow</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/stacks.css">
+    <link rel="stylesheet" type="text/css" href="../css/primary.css">
+    <link rel="stylesheet" type="text/css" href="../css/secondary.css">
+    <link rel="stylesheet" type="text/css" href="../css/channels.css">
+
+</head>
+
+<body class="col1-page about-page unified-theme">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+    <header class="s-topbar ps-fixed t0 l0 js-top-bar">
+        <div class="s-topbar--container">
+            <!-- LINK HREF 1 -->
+            <a href="/" class="s-topbar--logo js-gps-track"
+                data-gps-track="top_nav.click({is_current:false, location:6, destination:8})">
+                <span class="-img _glyph">Stack Overflow</span>
+            </a>
+
+
+
+            <ol class="s-navigation" role="presentation">
+
+
+                <li>
+                    <!-- LINK HREF 2 -->
+                    <a href="/About" class="s-navigation--item js-gps-track js-products-menu"
+                        aria-controls="products-popover" data-controller="s-popover" data-action="s-popover#toggle"
+                        data-s-popover-placement="bottom" data-s-popover-toggle-class="is-selected"
+                        data-gps-track="top_nav.products.click({location:6, destination:1})"
+                        data-ga="[&quot;top navigation&quot;,&quot;products menu click&quot;,null,null,null]"
+                        aria-expanded="false">
+                        About
+                    </a>
+                </li>
+
+            </ol>
+
+
+            <form id="search" role="search" action="#"
+                class="s-topbar--searchbar js-searchbar " autocomplete="off">
+                <div class="s-topbar--searchbar--input-group">
+                    <input name="q" type="text" role="combobox" placeholder="Search…" value="" autocomplete="off"
+                        maxlength="240" class="s-input s-input__search js-search-field " aria-label="Search"
+                        aria-controls="top-search" data-controller="s-popover" data-action="focus-&gt;s-popover#show"
+                        data-s-popover-placement="bottom-start" aria-expanded="false">
+                    <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18"
+                        height="18" viewBox="0 0 18 18">
+                        <path
+                            d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z">
+                        </path>
+                    </svg>
+
+                </div>
+            </form>
+
+            <nav class="h100 ml-auto overflow-x-auto pr12">
+                <ol class="s-topbar--content" role="menubar" style="margin-right: 15px; margin-left: 0px;">
+
+
+                    <li role="none" style="margin-left: 5px; margin-right: 5px;">
+                        <a href="#"
+                            class="s-topbar--item s-user-card s-user-card__small m0 px12 js-gps-track" role="menuitem"
+                            data-gps-track="profile_summary.click()">
+                            <div class="s-avatar s-avatar__24 s-user-card--avatar sm:m0" title="Nicholas"><img
+                                    src="../otherFiles/48030c308bdacb9c4b802c6446e821ff"
+                                    alt="Nicholas&#39;s user avatar" width="24" height="24"
+                                    class="bar-sm s-avatar--image js-avatar-me">
+                            </div>
+
+
+                            <div class="s-user-card--info sm:d-none">
+                                <ul class="s-user-card--awards">
+
+                                    <input type="hidden" value="<%= user.id %>" id="id">
+                                    <input type="hidden" value="<%= user.display_name %>" id="display_name">
+                                    <input type="hidden" value="<%= user.email %>" id="email">
+
+                                    <!-- HEADER USERNAME -->
+                                    <li class="s-user-card--rep js-header-rep" title="Username" aria-hidden="true"><%= user.display_name %></li>
+
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <!-- LINK HREF 3 -->
+                        <a href="/LogOut" class="s-topbar--item s-topbar--item__unset s-btn s-btn__filled ws-nowrap js-gps-track" role="menuitem" rel="nofollow" data-gps-track="login.click" data-ga="[&quot;top navigation&quot;,&quot;login button click&quot;,null,null,null]">Log out</a>
+                    </li>
+
+                </ol>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+
+
+
+
+    <div class="container">
+
+
+        <div data-is-here-when="" class="left-sidebar js-pinned-left-sidebar ps-relative" data-can-be="left-sidebar">
+        </div>
+
+
+
+
+
+
+        <div id="content" class="snippet-hidden">
+
+
+
+
+            <div id="mainbar-full">
+                <div class="content-page new-about-content-page about-content-page w-auto wmx8">
+                    <div class="about-intro">
+                        <h2 class="about-title">Welcome to Stack Overflow</h2>
+                        <img src="../image/apple-touch-icon@2.png" class="site-icon"
+                            alt="site icon">
+                        <div class="ta-center">
+                            <p>
+                            </p>
+                            <div class="wiki-ph" data-placeholder="WikiPlaceholder-AboutThisSite">
+                                <div class="wiki-ph-content">
+                                    <p><strong>Stack Overflow</strong> is a question and answer site for professional
+                                        and enthusiast programmers. It's built and run <em>by you</em> as part of the <a
+                                        >Stack Exchange</a> network of Q&amp;A
+                                        sites. With your help, we're working together to build a library of detailed,
+                                        high-quality answers to every question about programming.</p>
+                                </div>
+
+
+                            </div>
+                            <p></p>
+
+                            <p class="helper-text">
+                                We're a little bit different from other sites. Here's how: </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="about-qa">
+                        <h2 class="about-title">
+                            Ask questions, get answers, no distractions </h2>
+                        <div class="d-flex g24 ai-center jc-space-between md:fd-column">
+                            <div class="flex--item">
+                                <p>This site is all about <b>getting answers</b>. It's not a discussion forum. There's
+                                    no chit-chat.</p>
+
+                                <p class="d-flex flex__center g4 mt48">
+                                    <svg aria-hidden="true" class="svg-spot spotQuestion" width="48" height="48"
+                                        viewBox="0 0 48 48">
+                                        <path opacity=".2"
+                                            d="M40 5H10c-2.64 0-5 2.99-5 5.64V45l6-6h29.5c2.44 0 4.5-2.85 4.5-5.1V10.63C45.09 7.69 43.09 5 40 5Zm-4.83 29.1c-1.74-.54-4.05-1.48-5.36-2.8-4.35 1.72-9.76.94-13.15-2.34-6.64-7.13-2.43-21.57 8.31-21.04a11.02 11.02 0 0 1 8.27 3.22c2.08 2.15 3.07 5.14 3.07 8.89a16 16 0 0 1-.84 5.26c-.37.94-.87 1.89-1.55 2.76 1.11.7 2.33 1.14 3.56 1.59l-2.3 4.46Z">
+                                        </path>
+                                        <path
+                                            d="M9.97 35H36.8c.76 0 1.47-.01 2.1-.12.65-.1.93-.28 1.03-.38A3.63 3.63 0 0 0 41 31.94V6.62A3.63 3.63 0 0 0 37.37 3H8.64A3.64 3.64 0 0 0 5 6.63v34.05L9.97 35ZM3 46V6.62A5.65 5.65 0 0 1 8.63 1h28.74A5.63 5.63 0 0 1 43 6.63v25.3c0 1.5-.6 2.93-1.65 3.98C40.3 36.98 38.3 37 36.81 37H10.87L3 46Zm30.2-22.84c.5-1.43.8-3.12.8-5.03 0-3.63-1-6.44-2.9-8.44a10.3 10.3 0 0 0-7.83-3 10.4 10.4 0 0 0-7.87 3 11.67 11.67 0 0 0-2.9 8.44c0 3.63.99 6.44 2.9 8.44a10.58 10.58 0 0 0 8.02 3c1.74 0 3.37-.3 4.8-.95l.64.43a33 33 0 0 0 2.35 1.54c.64.36 1.29.64 1.96.84l1.66-3.18a14.63 14.63 0 0 1-3.6-1.85 10.02 10.02 0 0 0 1.97-3.24Zm-9.95-12.65a5.62 5.62 0 0 0-4.42 1.88c-1.12 1.3-1.69 3.2-1.69 5.74 0 2.59.57 4.53 1.7 5.82a5.31 5.31 0 0 0 4.28 1.91c.63 0 1.25-.11 1.81-.3a15.04 15.04 0 0 0-2.75-1.41l1.26-2.53c1.52.52 2.94 1.28 4.22 2.25a5.95 5.95 0 0 0 1.02-1.74 10.7 10.7 0 0 0 .7-4c0-2.56-.56-4.47-1.69-5.74a5.62 5.62 0 0 0-4.44-1.88ZM26.96 21a18.4 18.4 0 0 0-2.86-1.29l-1.66-.57-1.86 3.73a4.37 4.37 0 0 1-.25-.25c-.67-.79-1.19-2.17-1.19-4.5 0-2.27.51-3.63 1.2-4.42a3.63 3.63 0 0 1 2.83-1.2h.16a3.62 3.62 0 0 1 2.87 1.2c.66.76 1.18 2.1 1.18 4.42a8.9 8.9 0 0 1-.35 2.67l-.01.03-.01.02-.05.17ZM23.28 4.69a12.3 12.3 0 0 1 9.23 3.6l.01.01.02.02c2.36 2.46 3.45 5.83 3.45 9.82 0 2.1-.3 4.02-.9 5.7v.02l-.01.01c-.25.67-.57 1.32-.94 1.94.44.21.9.4 1.36.57l2.18.76-3.5 6.68-1.56-.46a11.17 11.17 0 0 1-2.5-1.07l-.26-.15-.63-.42-1.26-.85c-1.42.49-2.94.71-4.5.71A12.58 12.58 0 0 1 14 28l-.02-.02-.02-.02c-2.35-2.45-3.45-5.8-3.46-9.76-.2-3.6 1.02-7.12 3.4-9.82l.04-.05.05-.05a12.4 12.4 0 0 1 9.29-3.6Z">
+                                        </path>
+                                    </svg>
+                                    Just questions...
+                                </p>
+
+                                <p class="d-flex flex__center g4 mb48">
+                                    <svg aria-hidden="true" class="svg-spot spotAnswer" width="48" height="49"
+                                        viewBox="0 0 48 49">
+                                        <path opacity=".2"
+                                            d="M35 39H12c-2.72 0-5-2.28-5-5V9.3C7 6.57 8.13 5 10.88 5H40c2.72 0 5 2.28 5 5v38.5L35 39Zm-.33-7L26 10.8h-4.48L13.46 32h5.09l1.62-4.48h8.73L30.63 32h4.04Z">
+                                        </path>
+                                        <path
+                                            d="M36.29 35H8c-.15 0-.43-.06-.86-.33a7.43 7.43 0 0 1-1.26-1.05A3 3 0 0 1 5 31.5V6a3 3 0 0 1 3-3h30a3 3 0 0 1 3 3v33.4L36.29 35ZM43 6a5 5 0 0 0-5-5H8C5.25 1 3 3.25 3 6v25.5a5 5 0 0 0 1.46 3.54C5.4 35.97 6.67 37 8 37h27.5l7.5 7V6Zm-7.11 25L26.41 7h-6.94L10.3 31h8.51l1.63-4.48h5.1L27.25 31h8.64Zm-16.87-6.48L17.4 29h-4.2l7.65-20h4.2l7.9 20h-4.33l-1.72-4.48h-7.88Zm6.6-3.32-2.72-7.3-2.65 7.3h5.38Z">
+                                        </path>
+                                    </svg>
+                                    ...and answers.
+                                </p>
+
+                                <div class="d-flex g16">
+                                    <div class="flex--item">
+                                        <svg aria-hidden="true" class="fc-theme-primary-400 svg-icon iconArrowUpLg"
+                                            width="36" height="36" viewBox="0 0 36 36">
+                                            <path d="M2 25h32L18 9 2 25Z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex--item">
+                                        <p class="mb12">Good answers are voted up and <b>rise to the top</b>.</p>
+                                        <p class="fs-italic fs-body2 fc-light">The best answers show up first so that
+                                            they are always easy to find.</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex g16">
+                                    <div class="flex--item">
+                                        <svg aria-hidden="true" class="fc-green-700 svg-icon iconCheckmarkLg" width="36"
+                                            height="36" viewBox="0 0 36 36">
+                                            <path d="m6 14 8 8L30 6v8L14 30l-8-8v-8Z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex--item">
+                                        <p class="mb12">The person who asked can mark one answer as "accepted".</p>
+                                        <p class="fs-italic fs-body2 fc-light">Accepting doesn't mean it's the best
+                                            answer, it just means that it worked for the person who asked.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex--item6 fl-shrink0 overflow-hidden shadow md:d-none">
+                                <div class="qa-block p16 bar-lg bs-none mrn12">
+
+                                    <div id="question-header">
+                                        <h1 class="question-hyperlink">Do Swift-based applications work on OS X 10.9/iOS
+                                            7 and lower?</h1>
+                                    </div>
+                                    <div class="about-q d-flex">
+                                        <div class="votecell flex--item">
+                                            <div class="d-flex fd-column ai-center g4 fc-black-300">
+                                                <div class="flex--item">
+                                                    <svg aria-hidden="true" class="svg-icon iconArrowUpLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="M2 25h32L18 9 2 25Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex--item fs-title fc-light">
+                                                    14
+                                                </div>
+                                                <div class="flex--item">
+                                                    <svg aria-hidden="true" class="svg-icon iconArrowDownLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="M2 11h32L18 27 2 11Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex--item">
+                                                    <svg aria-hidden="true" class="svg-icon iconBookmark" width="18"
+                                                        height="18" viewBox="0 0 18 18">
+                                                        <path d="M3 17V3c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v14l-6-4-6 4Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="postcell flex--item">
+                                            <div class="s-prose mb16 v-truncate4">
+                                                <p>Will Swift-based applications work on <a
+                                                        rel="noreferrer">OS X 10.9</a> (Mavericks)/iOS&nbsp;7 and lower?
+                                                </p>
+                                                <p>For example, I have a machine running <a
+                                                        rel="noreferrer">OS X 10.8</a> (Mountain Lion), and I am
+                                                    wondering if an application I write in Swift will run on it.</p>
+                                                <p>Or what should I have to create a Swift application using Mac OS?</p>
+
+                                            </div>
+                                            <div class="post-taglist">
+                                                <a class="post-tag" title="show questions tagged &#39;swift&#39;"
+                                                    aria-label="show questions tagged &#39;swift&#39;" rel="tag"
+                                                    aria-labelledby="swift-container">swift</a><a
+                                                    class="post-tag" title="show questions tagged &#39;xcode&#39;"
+                                                    aria-label="show questions tagged &#39;xcode&#39;" rel="tag"
+                                                    aria-labelledby="xcode-container">xcode</a><a
+                                                    class="post-tag" title="show questions tagged &#39;macos&#39;"
+                                                    aria-label="show questions tagged &#39;macos&#39;" rel="tag"
+                                                    aria-labelledby="macos-container">macos</a>
+                                            </div>
+                                            <div class="post-signature owner float-right">
+                                                <div class="user-info ">
+                                                    <div class="user-action-time">
+                                                        asked <span title="2014-06-02 19:25:57Z"
+                                                            class="relativetime">Jun 2, 2014 at 19:25</span>
+                                                    </div>
+                                                    <div class="user-gravatar32">
+                                                        <div class="about-user1">
+                                                            <div class="gravatar-wrapper-32"><img
+                                                                    src="../image/xDQHx.jpg"
+                                                                    alt="MeIr&#39;s user avatar" width="32" height="32"
+                                                                    class="bar-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-details">
+                                                        MeIr<br>
+                                                        <span class="reputation-score" title="reputation score "
+                                                            dir="ltr">7,186</span><span title="6 gold badges"
+                                                            aria-hidden="true"><span class="badge1"></span><span
+                                                                class="badgecount">6</span></span><span
+                                                            class="v-visible-sr">6 gold badges</span><span
+                                                            title="49 silver badges" aria-hidden="true"><span
+                                                                class="badge2"></span><span
+                                                                class="badgecount">49</span></span><span
+                                                            class="v-visible-sr">49 silver badges</span><span
+                                                            title="77 bronze badges" aria-hidden="true"><span
+                                                                class="badge3"></span><span
+                                                                class="badgecount">77</span></span><span
+                                                            class="v-visible-sr">77 bronze badges</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="subheader answers-subheader">
+                                        <h3>2 Answers</h3>
+                                    </div>
+
+
+                                    <div class="about-a d-flex">
+                                        <div class="votecell flex--item">
+                                            <div class="d-flex fd-column ai-center g4 fc-black-300">
+                                                <div class="flex--item fc-theme-primary-400">
+                                                    <svg aria-hidden="true" class="svg-icon iconArrowUpLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="M2 25h32L18 9 2 25Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex--item fs-title fc-light">
+                                                    4
+                                                </div>
+                                                <div class="flex--item">
+                                                    <svg aria-hidden="true" class="svg-icon iconArrowDownLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="M2 11h32L18 27 2 11Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex--item fc-green-700">
+                                                    <svg aria-hidden="true" class="svg-icon iconCheckmarkLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="m6 14 8 8L30 6v8L14 30l-8-8v-8Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="postcell flex--item">
+                                            <div class="s-prose mb16 v-truncate4">
+                                                <p>Swift code can be deployed to OS X 10.9 and iOS 7.0. It will usually
+                                                    crash at launch on older OS versions.</p>
+
+                                            </div>
+
+
+                                            <div class="post-signature float-right">
+                                                <div class="user-info ">
+                                                    <div class="user-action-time">
+                                                        answered <span title="2014-06-03 08:25:37Z"
+                                                            class="relativetime">Jun 3, 2014 at 8:25</span>
+                                                    </div>
+                                                    <div class="user-gravatar32">
+                                                        <div class="about-user2">
+                                                            <div class="gravatar-wrapper-32"><img
+                                                                    src="../image/haS4F.png"
+                                                                    alt="Greg Parker&#39;s user avatar" width="32"
+                                                                    height="32" class="bar-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-details">
+                                                        Greg Parker<br>
+                                                        <span class="reputation-score" title="reputation score "
+                                                            dir="ltr">7,942</span><span title="2 gold badges"
+                                                            aria-hidden="true"><span class="badge1"></span><span
+                                                                class="badgecount">2</span></span><span
+                                                            class="v-visible-sr">2 gold badges</span><span
+                                                            title="23 silver badges" aria-hidden="true"><span
+                                                                class="badge2"></span><span
+                                                                class="badgecount">23</span></span><span
+                                                            class="v-visible-sr">23 silver badges</span><span
+                                                            title="21 bronze badges" aria-hidden="true"><span
+                                                                class="badge3"></span><span
+                                                                class="badgecount">21</span></span><span
+                                                            class="v-visible-sr">21 bronze badges</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="about-a d-flex">
+                                        <div class="votecell flex--item">
+                                            <div class="d-flex fd-column ai-center g4 fc-black-300">
+                                                <div class="flex--item">
+                                                    <svg aria-hidden="true" class="svg-icon iconArrowUpLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="M2 25h32L18 9 2 25Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex--item fs-title fc-light">
+                                                    3
+                                                </div>
+                                                <div class="flex--item">
+                                                    <svg aria-hidden="true" class="svg-icon iconArrowDownLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="M2 11h32L18 27 2 11Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="postcell flex--item">
+                                            <div class="s-prose mb16 v-truncate4">
+                                                <p>Apple has announced that Swift apps will be backward compatible with
+                                                    iOS 7 and OS X Mavericks. The WWDC app is written in Swift.</p>
+
+                                            </div>
+
+
+                                            <div class="post-signature float-right">
+                                                <div class="user-info ">
+                                                    <div class="user-action-time">
+                                                        answered <span title="2014-06-03 00:03:37Z"
+                                                            class="relativetime">Jun 3, 2014 at 0:03</span>
+                                                    </div>
+                                                    <div class="user-gravatar32">
+                                                        <div class="about-user2">
+                                                            <div class="gravatar-wrapper-32"><img
+                                                                    src="../image/3d2bec5d4578ac8965bb8610fe890237.png"
+                                                                    alt="Ben Gottlieb&#39;s user avatar" width="32"
+                                                                    height="32" class="bar-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-details">
+                                                        Ben Gottlieb<br>
+                                                        <span class="reputation-score" title="reputation score 85,159"
+                                                            dir="ltr">85.2k</span><span title="22 gold badges"
+                                                            aria-hidden="true"><span class="badge1"></span><span
+                                                                class="badgecount">22</span></span><span
+                                                            class="v-visible-sr">22 gold badges</span><span
+                                                            title="175 silver badges" aria-hidden="true"><span
+                                                                class="badge2"></span><span
+                                                                class="badgecount">175</span></span><span
+                                                            class="v-visible-sr">175 silver badges</span><span
+                                                            title="171 bronze badges" aria-hidden="true"><span
+                                                                class="badge3"></span><span
+                                                                class="badgecount">171</span></span><span
+                                                            class="v-visible-sr">171 bronze badges</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="about-offtopic">
+                        <h2 class="about-title">Get answers to practical, detailed questions</h2>
+                        <div class="d-flex ai-center g32 md:fd-column">
+                            <div class="flex--item">
+                                <p class="m0">Focus on questions about an <b>actual problem</b> you have faced. Include
+                                    details about what you have tried and exactly what you are trying to do.</p>
+                            </div>
+
+                            <div class="flex--item6 fl-shrink0 w100">
+                                <div class="on-topic-examples content-block bar-lg bs-none p16">
+                                    <p>Ask about...</p>
+
+                                    <div class="wiki-ph" data-placeholder="WikiPlaceholder-AboutOnTopic">
+                                        <div class="wiki-ph-content">
+                                            <ul>
+                                                <li>Specific programming problems</li>
+                                                <li>Software algorithms</li>
+                                                <li>Coding techniques</li>
+                                                <li>Software development tools</li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex ai-center mt32 g32 md:fd-column">
+                            <div class="flex--item">
+                                <p>Not all questions work well in our format. Avoid questions that are <b>primarily
+                                        opinion-based</b>, or that are likely to <b>generate discussion</b> rather than
+                                    answers.</p>
+                                <p class="fs-italic fs-body2 fc-light mb0">Questions that need improvement may be
+                                    <b>closed</b> until someone fixes them.</p>
+                            </div>
+
+                            <div class="flex--item6 fl-shrink0 w100">
+                                <div class="off-topic-examples content-block bar-lg bs-none p16">
+                                    <p>Don't ask about...</p>
+
+                                    <div class="wiki-ph" data-placeholder="WikiPlaceholder-AboutOffTopic">
+                                        <div class="wiki-ph-content">
+                                            <ul>
+                                                <li>Questions you haven't <em>tried</em> to find an answer for (show
+                                                    your work!)</li>
+                                                <li>Product or service recommendations or comparisons</li>
+                                                <li>Requests for lists of things, polls, opinions, discussions, etc.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+                    <div class="about-tags">
+                        <h2 class="about-title">Tags make it easy to find interesting questions</h2>
+
+                        <div class="d-flex g24 ai-center jc-space-between md:fd-column">
+                            <div class="flex--item">
+                                <p>All questions are <b>tagged</b> with their subject areas. Each can have up to 5 tags,
+                                    since a question might be related to several subjects.</p>
+
+                            </div>
+
+                            <div class="flex--item5 fl-shrink0 overflow-hidden shadow sm:d-none">
+                                <div class="qa-block p16 bar-lg bs-none mrn12">
+
+                                    <div id="question-header">
+                                        <h1 class="question-hyperlink">Do Swift-based applications work on OS X 10.9/iOS
+                                            7 and lower?</h1>
+                                    </div>
+                                    <div class="about-q d-flex">
+                                        <div class="votecell flex--item">
+                                            <div class="d-flex fd-column ai-center g4 fc-black-300">
+                                                <div class="flex--item">
+                                                    <svg aria-hidden="true" class="svg-icon iconArrowUpLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="M2 25h32L18 9 2 25Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex--item fs-title fc-light">
+                                                    14
+                                                </div>
+                                                <div class="flex--item">
+                                                    <svg aria-hidden="true" class="svg-icon iconArrowDownLg" width="36"
+                                                        height="36" viewBox="0 0 36 36">
+                                                        <path d="M2 11h32L18 27 2 11Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="postcell flex--item">
+                                            <div class="s-prose mb16 v-truncate4">
+                                                <p>Will Swift-based applications work on <a
+                                                        rel="noreferrer">OS X 10.9</a> (Mavericks)/iOS&nbsp;7 and lower?
+                                                </p>
+                                                <p>For example, I have a machine running <a
+                                                        rel="noreferrer">OS X 10.8</a> (Mountain Lion), and I am
+                                                    wondering if an application I write in Swift will run on it.</p>
+                                                <p>Or what should I have to create a Swift application using Mac OS?</p>
+
+                                            </div>
+                                            <div class="post-taglist">
+                                                <a
+                                                    class="post-tag" title="show questions tagged &#39;swift&#39;"
+                                                    aria-label="show questions tagged &#39;swift&#39;" rel="tag"
+                                                    aria-labelledby="swift-container">swift</a><a
+                                                    class="post-tag" title="show questions tagged &#39;xcode&#39;"
+                                                    aria-label="show questions tagged &#39;xcode&#39;" rel="tag"
+                                                    aria-labelledby="xcode-container">xcode</a><a
+                                                    class="post-tag" title="show questions tagged &#39;macos&#39;"
+                                                    aria-label="show questions tagged &#39;macos&#39;" rel="tag"
+                                                    aria-labelledby="macos-container">macos</a>
+                                            </div>
+                                            <div class="post-signature owner float-right">
+                                                <div class="user-info ">
+                                                    <div class="user-action-time">
+                                                        asked <span title="2014-06-02 19:25:57Z"
+                                                            class="relativetime">Jun 2, 2014 at 19:25</span>
+                                                    </div>
+                                                    <div class="user-gravatar32">
+                                                        <div class="about-user1">
+                                                            <div class="gravatar-wrapper-32"><img
+                                                                    src="../image/xDQHx.jpg"
+                                                                    alt="MeIr&#39;s user avatar" width="32" height="32"
+                                                                    class="bar-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-details">
+                                                        MeIr<br>
+                                                        <span class="reputation-score" title="reputation score "
+                                                            dir="ltr">7,186</span><span title="6 gold badges"
+                                                            aria-hidden="true"><span class="badge1"></span><span
+                                                                class="badgecount">6</span></span><span
+                                                            class="v-visible-sr">6 gold badges</span><span
+                                                            title="49 silver badges" aria-hidden="true"><span
+                                                                class="badge2"></span><span
+                                                                class="badgecount">49</span></span><span
+                                                            class="v-visible-sr">49 silver badges</span><span
+                                                            title="77 bronze badges" aria-hidden="true"><span
+                                                                class="badge3"></span><span
+                                                                class="badgecount">77</span></span><span
+                                                            class="v-visible-sr">77 bronze badges</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+                    <a name="cta"></a>
+                    <div class="about-newuser about-cta">
+                        <h2 class="about-title">Find a question to answer, or ask your own</h2>
+                        <div class="col-full">
+                            <div class="d-flex gs12 jc-center">
+                                <!-- LINK HREF 4 -->
+                                <a href="/Question/AllQuestion" id="new-questions"
+                                    class="flex--item s-btn s-btn__primary s-btn__md">See new questions</a>
+                                <!-- LINK HREF 5 -->
+                                <a   href="/Question/AskQuestion" id="ask-your-own"
+                                    class="flex--item s-btn s-btn__primary s-btn__md">Ask a question</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="about-se">
+                        <div class="col-full">
+                            <h2 class="about-title">Stack Overflow is part of the Stack Exchange network</h2>
+                            <p>Like this site? Stack Exchange is a network of 180 Q&amp;A sites just like it. Check out
+                                the <a id="full_list_of_sites">full list of
+                                    sites</a>.
+                            </p>
+                            <p><a>
+                                    <img src="../image/apple-touch-icon@2(1).png" class="site-icon"
+                                        alt="Stack Exchange"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--container">
+            <div class="site-footer--logo">
+
+                <a  aria-label="Stack Overflow"><svg aria-hidden="true"
+                        class="native svg-icon iconLogoGlyphMd" width="32" height="37" viewBox="0 0 32 37">
+                        <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
+                        <path
+                            d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z"
+                            fill="#F48024"></path>
+                    </svg></a>
+            </div>
+            <nav class="site-footer--nav">
+                <div class="site-footer--col">
+                    <h5 class="-title"><a class="js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 15})">Stack Overflow</a></h5>
+                    <ul class="-list js-primary-footer-links">
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 16})">Questions</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 3 })">Help</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col">
+                    <h5 class="-title"><a  class="js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 19 })">Products</a></h5>
+                    <ul class="-list">
+                        <li><a  class="js-gps-track -link"
+                                data-ga="[&quot;teams traffic&quot;,&quot;footer - site nav&quot;,&quot;stackoverflow.com/teams&quot;,null,{&quot;dimension4&quot;:&quot;teams&quot;}]"
+                                data-gps-track="footer.click({ location: 1, link: 29 })">Teams</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 21 })">Advertising</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 40 })">Collectives</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 20 })">Talent</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col">
+                    <h5 class="-title"><a class="js-gps-track" data-gps-track="footer.click({ location: 1, link: 1 })"
+                            >Company</a></h5>
+                    <ul class="-list">
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 1 })"
+                                >About</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 27 })"
+                                >Press</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 9 })"
+                                >Work Here</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 7 })"
+                                >Legal</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 8 })"
+                                >Privacy Policy</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 37 })"
+                                >Terms of Service</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 13 })"
+                                >Contact Us</a></li>
+                        <li class="" id="consent-footer-link"><a class="js-gps-track -link js-cookie-settings"
+                                data-gps-track="footer.click({ location: 1, link: 38 })"
+                                 data-consent-popup-loader="footer">Cookie
+                                Settings</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 39 })"
+                                >Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col site-footer--categories-nav">
+                    <div>
+                        <h5 class="-title"><a
+                                data-gps-track="footer.click({ location: 1, link: 30 })">Stack Exchange Network</a></h5>
+                        <ul class="-list">
+                            <li>
+                                <a class="-link js-gps-track"
+                                    data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Technology
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track"
+                                    data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Culture &amp; recreation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track"
+                                    data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Life &amp; arts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track"
+                                    data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Science
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track"
+                                    data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Professional
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track"
+                                    data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Business
+                                </a>
+                            </li>
+
+                            <li class="mt16 md:mt0">
+                                <a class="-link js-gps-track"
+                                    data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    API
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="-link js-gps-track"
+                                    data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Data
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="site-footer--copyright fs-fine md:mt24">
+                <ul class="-list -social md:mb8">
+                    <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link:4 })"
+                            >Blog</a></li>
+                    <li><a class="-link js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 31 })">Facebook</a></li>
+                    <li><a class="-link js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 32 })">Twitter</a></li>
+                    <li><a class="-link js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 33 })">LinkedIn</a></li>
+                    <li><a class="-link js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 36 })">Instagram</a></li>
+                </ul>
+
+                <p class="md:mb0">
+                    Site design / logo © 2023 Stack Exchange Inc; user contributions licensed under <span
+                        class="td-underline"><a href="">CC BY-SA</a></span>.
+                    <span id="svnrev">rev&nbsp;2023.1.20.43184</span>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="onetrust-consent-sdk" class="d-none"></div>
+    <div id="onetrust-banner-sdk" data-controller="s-modal"></div>
+    <div id="ot-pc-content" class="d-none"></div>
+    <div id="onetrust-style" class="d-none">&nbsp;</div>
+    <div class="d-none js-consent-banner-version" data-consent-banner-version="baseline"></div>
+
+</body>
+
+</html>

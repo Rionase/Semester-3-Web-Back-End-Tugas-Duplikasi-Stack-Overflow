@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://stackoverflow.com/questions/ask -->
+<html class="html__responsive html__unpinned-leftnav" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Ask Question - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/stacks.css">
+    <link rel="stylesheet" type="text/css" href="../css/primary.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/secondary.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/channels.css">
+
+</head>
+
+<body class="ask-page unified-theme floating-content js-staging-ground-wizard">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+    <header class="s-topbar ps-fixed t0 l0 js-top-bar">
+        <div class="s-topbar--container">
+            <!-- LINK HREF 1 -->
+            <a href="/" class="s-topbar--logo js-gps-track"
+                data-gps-track="top_nav.click({is_current:false, location:6, destination:8})">
+                <span class="-img _glyph">Stack Overflow</span>
+            </a>
+
+
+
+            <ol class="s-navigation" role="presentation">
+
+
+                <li>
+                    <!-- LINK HREF 2 -->
+                    <a href="/About" class="s-navigation--item js-gps-track js-products-menu"
+                        aria-controls="products-popover" data-controller="s-popover" data-action="s-popover#toggle"
+                        data-s-popover-placement="bottom" data-s-popover-toggle-class="is-selected"
+                        data-gps-track="top_nav.products.click({location:6, destination:1})"
+                        data-ga="[&quot;top navigation&quot;,&quot;products menu click&quot;,null,null,null]"
+                        aria-expanded="false">
+                        About
+                    </a>
+                </li>
+
+            </ol>
+
+
+            <form id="search" role="search" action="#"
+                class="s-topbar--searchbar js-searchbar " autocomplete="off">
+                <div class="s-topbar--searchbar--input-group">
+                    <input name="q" type="text" role="combobox" placeholder="Search…" value="" autocomplete="off"
+                        maxlength="240" class="s-input s-input__search js-search-field " aria-label="Search"
+                        aria-controls="top-search" data-controller="s-popover" data-action="focus-&gt;s-popover#show"
+                        data-s-popover-placement="bottom-start" aria-expanded="false">
+                    <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18"
+                        height="18" viewBox="0 0 18 18">
+                        <path
+                            d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z">
+                        </path>
+                    </svg>
+
+                </div>
+            </form>
+
+            <nav class="h100 ml-auto overflow-x-auto pr12">
+                <ol class="s-topbar--content" role="menubar" style="margin-right: 15px; margin-left: 0px;">
+
+
+                    <li role="none" style="margin-left: 5px; margin-right: 5px;">
+                        <a href="#"
+                            class="s-topbar--item s-user-card s-user-card__small m0 px12 js-gps-track" role="menuitem"
+                            data-gps-track="profile_summary.click()">
+                            <div class="s-avatar s-avatar__24 s-user-card--avatar sm:m0" title="Nicholas"><img
+                                    src="../otherFiles/48030c308bdacb9c4b802c6446e821ff"
+                                    alt="Nicholas&#39;s user avatar" width="24" height="24"
+                                    class="bar-sm s-avatar--image js-avatar-me">
+                            </div>
+
+
+                            <div class="s-user-card--info sm:d-none">
+                                <ul class="s-user-card--awards">
+
+                                    <input type="hidden" value="<%= user.id %>" id="id">
+                                    <input type="hidden" value="<%= user.display_name %>" id="display_name">
+                                    <input type="hidden" value="<%= user.email %>" id="email">
+
+                                    <!-- HEADER USERNAME -->
+                                    <li class="s-user-card--rep js-header-rep" title="Username" aria-hidden="true"><%= user.display_name %></li>
+
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <!-- LINK HREF 3 -->
+                        <a href="/LogOut" class="s-topbar--item s-topbar--item__unset s-btn s-btn__filled ws-nowrap js-gps-track" role="menuitem" rel="nofollow" data-gps-track="login.click" data-ga="[&quot;top navigation&quot;,&quot;login button click&quot;,null,null,null]">Log out</a>
+                    </li>
+
+                </ol>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+    <div class="container bg-black-025">
+
+
+        <div data-is-here-when="" class="left-sidebar js-pinned-left-sidebar ps-relative" data-can-be="left-sidebar">
+        </div>
+
+
+
+
+
+
+        <div id="content" class="pt0 snippet-hidden">
+
+            <div class="box-border w100">
+
+                <form id="post-form" class="post-form js-post-form" action="#" method="post" >
+
+                    <main id="question-form" class="mb48">
+
+                        <!-- Description Box -->
+                        <div class="d-flex fd-column js-write-question-notice ">
+                            <div
+                                class="d-flex flex--item w100 lg:mb12 lg:100 ai-center bg-no-repeat bg-right-bottom wide:bg-image-ask-v2 wide:h-ask-v2-background">
+                                <h1 class="fs-headline1 fw-bold mt24">Ask a public question</h1>
+                            </div>
+                            <div class="w100 mt16">
+
+                                <div class="d-flex w100 ai-center mb16 md:mt0">
+                                    <div class="s-notice s-notice__info p24 w70 lg:w100">
+                                        <h2 class="fs-title fw-normal mb8">Writing a good question</h2>
+                                        <p class="fs-body2 mb0">
+                                            You’re ready to <a>ask</a>
+                                            a <a>programming-related question</a> and this form will help guide you
+                                            through the process.
+                                        </p>
+                                        <h5 class="fw-bold mb8">Steps</h5>
+                                        <ul class="mb0">
+                                            <li>Summarize your problem in a one-line title.</li>
+                                            <li>Describe your problem in more detail.</li>
+                                            <li>Describe what you tried and what you expected to happen.</li>
+                                            <li>Add “tags” which help surface your question to members of the community.
+                                            </li>
+                                            <li>Review your question and post it to the site.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <div class="d-flex w100 lg:fd-column-reverse ai-start g16" >
+                            <div class="flex--item w70 lg:w100 bg-white bar-sm p24 ba bc-black-075 fl-shrink0 js-post-title-section"
+                                id="post-title">
+                                <div class="d-flex gs4 gsy fd-column js-stacks-validation">
+                                    <div class="d-flex fd-column flex--item">
+                                        <div class="flex--item">
+                                            <label for="title" class="s-label">
+                                                Title
+                                            </label>
+                                        </div>
+                                        <div class="d-flex flex--item md:fd-column">
+                                            <div class="s-description flex--item9 my2">
+                                                <label for="title">
+                                                    Be specific and imagine you’re asking a question to another person.
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="flex--item3 s-input-message js-title-text-counter ta-right md:ta-left my2 s-description py2 cool d-none">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ps-relative">
+
+                                        <!-- TITLE INPUT BOX -->
+                                        <input id="title" name="title" type="text" maxlength="300"
+                                            placeholder="e.g. Is there an R function for finding the index of an element in a vector?"
+                                            class="s-input js-post-title-field ask-title-field" value=""
+                                            data-min-length="15" data-max-length="150" >
+                                        <svg aria-hidden="true"
+                                            class="s-input-icon js-title-invalid-alert d-none svg-icon iconAlertCircle"
+                                            width="18" height="18" viewBox="0 0 18 18">
+                                            <path
+                                                d="M9 17c-4.36 0-8-3.64-8-8 0-4.36 3.64-8 8-8 4.36 0 8 3.64 8 8 0 4.36-3.64 8-8 8ZM8 4v6h2V4H8Zm0 8v2h2v-2H8Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <!-- TITLE ERROR MESSAGE -->
+                                    <div class="flex--item s-input-message js-stacks-validation-message" id="title-error" style="color: var(--red-400); display: none;">
+                                        Title cannot be empty.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex--item js-title-sidebar js-sidebar-toggler ps-relative w100" id="title_description" style="display: '';">
+                                <div class="ps-absolute lg:ps-relative p0 s-card bs-sm">
+                                    <div class="fs-body2 bb bc-black-100 bg-black-025 p12">
+                                        Writing a good title
+                                    </div>
+                                    <div class="bg-white d-flex gsx gs16 m16">
+                                        <div class="flex--item">
+                                            <svg aria-hidden="true" class="svg-spot spotPencil" width="48" height="48"
+                                                viewBox="0 0 48 48">
+                                                <path opacity=".2"
+                                                    d="M31.52 5.2a.34.34 0 0 0-.46.08L7 39.94a.34.34 0 0 0-.06.16l-.54 5.21c-.03.26.24.45.48.34l4.77-2.29c.05-.02.1-.06.13-.1L35.83 8.58a.34.34 0 0 0-.09-.47l-4.22-2.93Z">
+                                                </path>
+                                                <path
+                                                    d="M28.53 2.82c.4-.58 1.2-.73 1.79-.32l4.22 2.92c.58.4.72 1.2.32 1.79L10.82 41.87c-.13.18-.3.33-.5.43l-4.77 2.28c-.9.44-1.93-.29-1.83-1.29l.55-5.2c.02-.22.1-.43.22-.6L28.53 2.81Zm4.43 3.81L29.74 4.4 28.2 6.6l3.22 2.24 1.53-2.21Zm-2.6 3.76-3.23-2.24-20.32 29.3 3.22 2.24 20.32-29.3ZM5.7 42.4 8.62 41l-2.57-1.78-.34 3.18Zm35.12.3a1 1 0 1 0-.9-1.78 35 35 0 0 1-7.94 3.06c-1.93.43-3.8.3-5.71-.04-.97-.17-1.93-.4-2.92-.64l-.3-.07c-.9-.21-1.81-.43-2.74-.62-2.9-.58-6.6-.49-9.43.65a1 1 0 0 0 .74 1.86c2.4-.96 5.68-1.07 8.3-.55.88.18 1.77.4 2.66.6l.3.08c1 .24 2 .48 3.03.66 2.07.37 4.22.53 6.5.02 3-.67 5.77-1.9 8.41-3.22Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="flex--item fs-caption">
+                                            <p>Your title should summarize the problem.</p>
+                                            <p>You might find that you have a better idea of your title after writing
+                                                out the rest of the question.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Problem -->
+                        <div class="js-problem-details-section mt12 d-flex w100 lg:fd-column-reverse ai-start g16">
+                            <div class="flex--item bg-white bar-sm ba bc-black-075 w70 lg:w100 fl-shrink0"
+                                id="post-problem-details">
+                                <div class="js-problem-details-overlay t0 b0 p24">
+                                    <div class="d-flex gs4 gsy fd-column js-stacks-validation">
+                                        <div class="flex--item">
+                                            <label for="problem-details" class="d-block s-label">
+                                                What are the details of your problem?
+                                                <p class="s-description mt2 mb6">Introduce the problem and expand on
+                                                    what you put in the title. Minimum 20 characters.</p>
+                                            </label>
+                                        </div>
+                                        <div class="js-problem-details-field" id="problem-details"
+                                            data-stacks-editor-instance-id="8024">
+                                            <div
+                                                class="ps-relative z-base s-textarea overflow-auto hmn2 w100 p0 d-flex fd-column s-editor-resizable">
+                                                <div class="js-sticky-sentinel"></div>
+                                                <div
+                                                    class="py6 bg-inherit btr-sm w100 ps-sticky t0 l0 z-nav s-editor-shadow js-plugin-container js-sticky">
+                                                    <div class="d-flex overflow-x-auto ai-center px12 py4 pb0">
+                                                        <div class="d-flex g16 fl-grow1 ai-center js-editor-menu">
+                                                            <div
+                                                                class="s-editor-menu-block d-flex g2  js-block-formatting1">
+
+                                                                <button style="margin-right: 10px;"
+                                                                    class="s-editor-btn s-btn js-editor-btn js-code-btn"
+                                                                    aria-label="Inline code (Ctrl-K)"
+                                                                    data-controller="s-tooltip"
+                                                                    data-s-tooltip-placement="top" data-key="toggleCode"
+                                                                    type="button"
+                                                                    aria-describedby="--stacks-s-tooltip-0189uehj"
+                                                                    id="InlineCode">
+                                                                    <span class="icon-bg iconCode"></span> 
+                                                                    <span id="CodeLineDescription" style="display: none;">&nbsp;&nbsp;Inline Code: ' code '&nbsp;&nbsp;</span>
+                                                                </button>
+
+                                                                <button  style="margin-right: 10px;"
+                                                                    class="s-editor-btn s-btn js-editor-btn js-code-btn"
+                                                                    aria-label="Code block (Ctrl-M)"
+                                                                    data-controller="s-tooltip"
+                                                                    data-s-tooltip-placement="top"
+                                                                    data-key="toggleCodeblock" type="button"
+                                                                    aria-describedby="--stacks-s-tooltip-89w2y2qn"
+                                                                    id="CodeBlock">
+                                                                    <span class="icon-bg iconCodeblock"></span>
+                                                                    <span id="CodeBlockDescription" style="display: none;">&nbsp;&nbsp;Code block : ''' code '''&nbsp;&nbsp;</span>
+                                                                </button>
+
+                                                                <button style="margin-right: 10px;"
+                                                                    class="s-editor-btn s-btn js-editor-btn js-bold-btn"
+                                                                    aria-label="Bold (Ctrl-B)"
+                                                                    data-controller="s-tooltip"
+                                                                    data-s-tooltip-placement="top" data-key="toggleBold"
+                                                                    type="button"
+                                                                    aria-describedby="--stacks-s-tooltip-mgtk87ub"
+                                                                    id="NewLine">
+                                                                    <span style="font-size: 15px; font-weight: bold;">\n</span>
+                                                                    <span id="NewLineDescription" style="display: none;">&nbsp;&nbsp;New Line : " \n "&nbsp;&nbsp;</span>
+                                                                </button>
+
+
+                                                                <button style="margin-right: 10px;"
+                                                                    class="s-editor-btn s-btn js-editor-btn js-italic-btn"
+                                                                    aria-label="Italic (Ctrl-I)"
+                                                                    data-controller="s-tooltip"
+                                                                    data-s-tooltip-placement="top"
+                                                                    data-key="toggleEmphasis" type="button"
+                                                                    aria-describedby="--stacks-s-tooltip-vga0r3oe"
+                                                                    id="Tab">
+                                                                    <span style="font-size: 15px; font-weight: bold;">\t</span>
+                                                                    <span id="TabDescription" style="display: none;">&nbsp;&nbsp;Tab : " \t "&nbsp;&nbsp;</span>
+                                                                </button>
+
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <!-- Koding box disini -->
+                                                <div id="ProblemTextBox" class="fl-grow1 outline-none p12 pt6 w100 s-prose js-editor ProseMirror" role="textbox" aria-multiline="true" aria-label="Body" contenteditable="true" translate="no"><pre class="s-code-block markdown"><code><br class="ProseMirror-trailingBreak"></code></pre></div>
+                                            </div>
+
+                                            <!-- PROBLEM ERROR -->
+                                            <div class="flex--item s-input-message js-stacks-validation-message" id="problem-error" style="color: var(--red-400); display: none;">
+                                                Problem description cannot be empty.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="s-prose py16 js-md-preview" id="preview">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="flex--item js-problem-details-sidebar js-sidebar-toggler ps-relative w100" id="problem_description" style="display: none;">
+                                <div class="ps-absolute lg:ps-relative p0 s-card bs-sm">
+                                    <div class="fs-body2 bb bc-black-100 bg-black-025 p12">
+                                        Introduce the problem
+                                    </div>
+                                    <div class="bg-white d-flex gsx gs16 m16">
+                                        <div class="flex-item">
+                                            <svg aria-hidden="true" class="svg-spot spotPencil" width="48" height="48"
+                                                viewBox="0 0 48 48">
+                                                <path opacity=".2"
+                                                    d="M31.52 5.2a.34.34 0 0 0-.46.08L7 39.94a.34.34 0 0 0-.06.16l-.54 5.21c-.03.26.24.45.48.34l4.77-2.29c.05-.02.1-.06.13-.1L35.83 8.58a.34.34 0 0 0-.09-.47l-4.22-2.93Z">
+                                                </path>
+                                                <path
+                                                    d="M28.53 2.82c.4-.58 1.2-.73 1.79-.32l4.22 2.92c.58.4.72 1.2.32 1.79L10.82 41.87c-.13.18-.3.33-.5.43l-4.77 2.28c-.9.44-1.93-.29-1.83-1.29l.55-5.2c.02-.22.1-.43.22-.6L28.53 2.81Zm4.43 3.81L29.74 4.4 28.2 6.6l3.22 2.24 1.53-2.21Zm-2.6 3.76-3.23-2.24-20.32 29.3 3.22 2.24 20.32-29.3ZM5.7 42.4 8.62 41l-2.57-1.78-.34 3.18Zm35.12.3a1 1 0 1 0-.9-1.78 35 35 0 0 1-7.94 3.06c-1.93.43-3.8.3-5.71-.04-.97-.17-1.93-.4-2.92-.64l-.3-.07c-.9-.21-1.81-.43-2.74-.62-2.9-.58-6.6-.49-9.43.65a1 1 0 0 0 .74 1.86c2.4-.96 5.68-1.07 8.3-.55.88.18 1.77.4 2.66.6l.3.08c1 .24 2 .48 3.03.66 2.07.37 4.22.53 6.5.02 3-.67 5.77-1.9 8.41-3.22Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="flex--item">
+                                            <p class="fs-caption">Explain how you encountered the problem you’re trying
+                                                to solve, and any difficulties that have prevented you from solving it
+                                                yourself.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tag  -->
+                        <div class="mt12 d-flex lg:fd-column-reverse w100 ai-start g16">
+                            <div class="flex--item w70 lg:w100 ps-relative bg-white bar-sm ba bc-black-075 fl-shrink0"
+                                id="tag-editor">
+                                <div class="js-tags-overlay t0 b0 py24 px8">
+
+                                    <div class="ps-relative">
+                                        <div class="form-item p0 js-stacks-validation js-tag-editor-container mx16">
+                                            <div class="d-flex ai-center jc-space-between">
+                                                <label for="tageditor-replacing-tagnames--input"
+                                                    class="s-label mb4 d-block flex--item fl1">
+                                                    Tags
+                                                    <div class="s-description mt2">Add up to 5 tags to describe what
+                                                        your question is about.</div>
+                                                </label>
+                                            </div>
+                                            <div class="d-flex fd-column g4 ps-relative">
+                                                <div class="ps-relative">
+
+                                                    <!-- tag input box -->
+                                                    <input id="tagnames" class="s-input box-border js-post-tags-field" name="tagnames" type="text" size="60" autocomplete="off" value="" tabindex="0" placeholder="e.g. (vba objective-c python)">
+
+                                                    <!-- TAG ERROR -->
+                                                    <div class="flex--item s-input-message js-stacks-validation-message" id="tag-error" style="color: var(--red-400); display: none;">
+                                                        TAGS cannot be empty.
+                                                    </div>
+
+                                                    <div class="js-tag-editor tag-editor multi-line s-input" style="padding: 0px 9.1px; box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; width: 100%; border: transparent; margin-top: 5px;" id="tags_multiple_box" >
+                                                        <!-- <span>
+                                                            <span class="s-tag rendered-element">aaaa</span>
+                                                            <span class="s-tag rendered-element">bbbbb</span>
+                                                        </span> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="js-tag-suggestions"></div>
+                                </div>
+                            </div>
+
+                            <div class="flex--item js-tag-sidebar js-sidebar-toggler ps-relative w100" id="tags_description" style="display: none;">
+                                <div class="ps-absolute lg:ps-relative p0 s-card bs-sm">
+                                    <div class="fs-body2 bb bc-black-100 bg-black-025 p12">
+                                        Adding tags
+                                    </div>
+                                    <div class="bg-white d-flex gsx gs16 m16">
+                                        <div class="flex-item">
+                                            <svg aria-hidden="true" class="svg-spot spotPencil" width="48" height="48"
+                                                viewBox="0 0 48 48">
+                                                <path opacity=".2"
+                                                    d="M31.52 5.2a.34.34 0 0 0-.46.08L7 39.94a.34.34 0 0 0-.06.16l-.54 5.21c-.03.26.24.45.48.34l4.77-2.29c.05-.02.1-.06.13-.1L35.83 8.58a.34.34 0 0 0-.09-.47l-4.22-2.93Z">
+                                                </path>
+                                                <path
+                                                    d="M28.53 2.82c.4-.58 1.2-.73 1.79-.32l4.22 2.92c.58.4.72 1.2.32 1.79L10.82 41.87c-.13.18-.3.33-.5.43l-4.77 2.28c-.9.44-1.93-.29-1.83-1.29l.55-5.2c.02-.22.1-.43.22-.6L28.53 2.81Zm4.43 3.81L29.74 4.4 28.2 6.6l3.22 2.24 1.53-2.21Zm-2.6 3.76-3.23-2.24-20.32 29.3 3.22 2.24 20.32-29.3ZM5.7 42.4 8.62 41l-2.57-1.78-.34 3.18Zm35.12.3a1 1 0 1 0-.9-1.78 35 35 0 0 1-7.94 3.06c-1.93.43-3.8.3-5.71-.04-.97-.17-1.93-.4-2.92-.64l-.3-.07c-.9-.21-1.81-.43-2.74-.62-2.9-.58-6.6-.49-9.43.65a1 1 0 0 0 .74 1.86c2.4-.96 5.68-1.07 8.3-.55.88.18 1.77.4 2.66.6l.3.08c1 .24 2 .48 3.03.66 2.07.37 4.22.53 6.5.02 3-.67 5.77-1.9 8.41-3.22Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="flex--item fs-caption">
+                                            <p>Tags help ensure that your question will get attention from the right
+                                                people.</p>
+                                            <p>Tag things in more than one way so people can find them more easily. Add
+                                                tags for product lines, projects, teams, and the specific technologies
+                                                or languages used.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="js-show-on-question-only" id="question-only-section">
+
+                            <div class="js-inbox-notification-checkbox my12">
+
+
+                            </div>
+                            <!-- LINK HREF 4 -->
+                            <div class="form-submit clear-both d-flex gsx gs16 p0 mt12">
+                                <button id="submit-button"
+                                    class="flex--item s-btn s-btn__primary s-btn__icon js-submit-button" type="button"
+                                    autocomplete="off">
+                                    Post your question
+                                </button>
+
+                            </div>
+                            <div class="js-general-error general-error clear-both d-none mt16" aria-live="polite"></div>
+                        </div>
+                    </main>
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--container">
+            <div class="site-footer--logo">
+
+                <a aria-label="Stack Overflow"><svg aria-hidden="true" class="native svg-icon iconLogoGlyphMd"
+                        width="32" height="37" viewBox="0 0 32 37">
+                        <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
+                        <path
+                            d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z"
+                            fill="#F48024"></path>
+                    </svg></a>
+            </div>
+            <nav class="site-footer--nav">
+                <div class="site-footer--col">
+                    <h5 class="-title"><a class="js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 15})">Stack Overflow</a></h5>
+                    <ul class="-list js-primary-footer-links">
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 16})">Questions</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 3 })">Help</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col">
+                    <h5 class="-title"><a class="js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 19 })">Products</a></h5>
+                    <ul class="-list">
+                        <li><a class="js-gps-track -link"
+                                data-ga="[&quot;teams traffic&quot;,&quot;footer - site nav&quot;,&quot;stackoverflow.com/teams&quot;,null,{&quot;dimension4&quot;:&quot;teams&quot;}]"
+                                data-gps-track="footer.click({ location: 1, link: 29 })">Teams</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 21 })">Advertising</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 40 })">Collectives</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 20 })">Talent</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col">
+                    <h5 class="-title"><a class="js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 1 })">Company</a></h5>
+                    <ul class="-list">
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 1 })">About</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 27 })">Press</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 9 })">Work
+                                Here</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 7 })">Legal</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 8 })">Privacy Policy</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 37 })">Terms
+                                of Service</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 13 })">Contact Us</a></li>
+                        <li class="" id="consent-footer-link"><a class="js-gps-track -link js-cookie-settings"
+                                data-gps-track="footer.click({ location: 1, link: 38 })"
+                                data-consent-popup-loader="footer">Cookie
+                                Settings</a></li>
+                        <li><a class="js-gps-track -link"
+                                data-gps-track="footer.click({ location: 1, link: 39 })">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col site-footer--categories-nav">
+                    <div>
+                        <h5 class="-title"><a data-gps-track="footer.click({ location: 1, link: 30 })">Stack Exchange
+                                Network</a></h5>
+                        <ul class="-list">
+                            <li>
+                                <a class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Technology
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Culture &amp; recreation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Life &amp; arts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Science
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Professional
+                                </a>
+                            </li>
+                            <li>
+                                <a class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Business
+                                </a>
+                            </li>
+
+                            <li class="mt16 md:mt0">
+                                <a class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    API
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                    Data
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="site-footer--copyright fs-fine md:mt24">
+                <ul class="-list -social md:mb8">
+                    <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link:4 })">Blog</a>
+                    </li>
+                    <li><a class="-link js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 31 })">Facebook</a></li>
+                    <li><a class="-link js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 32 })">Twitter</a></li>
+                    <li><a class="-link js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 33 })">LinkedIn</a></li>
+                    <li><a class="-link js-gps-track"
+                            data-gps-track="footer.click({ location: 1, link: 36 })">Instagram</a></li>
+                </ul>
+
+                <p class="md:mb0">
+                    Site design / logo © 2023 Stack Exchange Inc; user contributions licensed under <span
+                        class="td-underline"><a>CC BY-SA</a></span>.
+                    <span id="svnrev">rev&nbsp;2023.1.20.43184</span>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Google tag (gtag.js) -->
+
+
+
+    <div id="onetrust-consent-sdk" class="d-none"></div>
+    <div id="onetrust-banner-sdk" data-controller="s-modal"></div>
+    <div id="ot-pc-content" class="d-none"></div>
+    <div id="onetrust-style" class="d-none">&nbsp;</div>
+    <div class="d-none js-consent-banner-version" data-consent-banner-version="baseline"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/Answer_Preview.js"></script>
+    <script src="/js/AskQuestion.js"></script>
+
+</body>
+
+</html>
